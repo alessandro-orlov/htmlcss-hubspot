@@ -16,6 +16,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .col {
   float: left;
 }
@@ -25,4 +29,83 @@ ul {
   display: table;
   clear: both;
 }
+
+.container {
+  padding: 0 12%;
+}
+
+.top-background {
+  background-color: #f4f9fd;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.orange-btn {
+  color: #fff;
+  background-color: #fe775a;
+}
 /* END GENERAL RULES */
+
+/* BEGIN HEADER */
+header .top-background {
+  border-bottom: 1px solid #33475b;
+}
+
+/* begin settings-menu */
+header .settings-menu {
+padding: 25px 0;
+}
+
+header .settings-menu .col {
+  width: 50%;
+}
+
+header .settings-menu .left {
+  line-height: 50px
+}
+
+header .settings-menu .col a {
+  display: inline-block;
+  color: #33475b;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+header .settings-menu .col span.divider {
+  line-height: 20px;
+  border-right: 2px solid #33475b;
+  margin: 0 20px;
+}
+header .settings-menu .col a.search {
+  color: #03a5be;
+}
+
+header .settings-menu .col a.login {
+  color: #fe775a;
+  margin: 0 25px;
+  padding: 14px;
+  border: 1px solid #fe775a;
+  border-radius: 7px;
+}
+
+header .settings-menu .col a.orange-btn {
+  color: #fff;
+  padding: 14px;
+  border-radius: 7px;
+}
+
+
+
+
+
+/* END HEADER */
