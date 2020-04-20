@@ -6,6 +6,7 @@
 }
 /* END RESET*/
 
+
 /* BEGIN GENERAL RULES*/
 body {
   font-family: 'Montserrat', sans-serif;
@@ -18,6 +19,14 @@ ul {
 
 a {
   text-decoration: none;
+  text-transform: capitalize;
+}
+
+p {
+line-height: 36px;
+font-size: 16px;
+font-weight: 600;
+margin: 30px 0;
 }
 
 .col {
@@ -34,7 +43,7 @@ a {
   padding: 0 15%;
 }
 
-.top-background {
+.top-section {
   background-color: #f4f9fd;
 }
 
@@ -50,19 +59,26 @@ a {
   text-align: center;
 }
 
-.orange-btn {
+a.orange-btn {
+  display: inline-block;
   background-color: #fe775a;
   color: #fff;
+  font-weight: 600;
   padding: 14px;
   border-radius: 7px;
   transition: all .2s ease;
 }
 
-.orange-btn:hover {
+a.orange-btn:hover {
   color: #fff;
   background-color: #03a5be;
 }
+
+a.big {
+  padding: 25px 40px;
+}
 /* END GENERAL RULES */
+
 
 /* BEGIN HEADER */
 header .top-background {
@@ -74,7 +90,6 @@ header a {
   display: inline-block;
   color: #33475b;
   font-weight: 600;
-  text-transform: capitalize;
   transition: all .2s ease;
 }
 
@@ -152,28 +167,17 @@ nav .col ul li a i{
 /* Begin jumbotron-section */
 header .jumbotron-section {
   background-color: #fef6ef;
-  background-position: 100%;
+  background-position: 100% -10%;
   background-repeat: no-repeat;
   background-image: url(../img/jumbotron.png);
 }
 
 header .jumbotron-section .teaser {
   width: 50%;
-  padding: 60px 0px 160px 0;
+  padding: 60px 0px 140px 0;
 }
 header .jumbotron-section .teaser h1{
   font-size: 50px;
-}
-
-header .jumbotron-section .teaser p {
-  line-height: 36px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 30px 0;
-}
-
-header .jumbotron-section .teaser a.big {
-  padding: 25px 30px;
 }
 
 header .jumbotron-section .teaser h6 {
@@ -181,13 +185,93 @@ header .jumbotron-section .teaser h6 {
   font-weight: 600;
   font-size: 13px;
 }
+
 header .jumbotron-section .decoration {
   height: 100px;
   background-color: #afebe4;
   border-top: 5px solid #33475b;
   border-bottom: 5px solid #33475b;
 }
-
 /* End jumbotron-section */
-
 /* END HEADER */
+
+
+/* BEGIN MAIN */
+
+/*Begin offer */
+main section.offer {
+  padding: 30px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+main section.offer img {
+  width: 300px;
+}
+
+main section.offer h2 {
+  text-transform: capitalize;
+  font-size: 32px;
+}
+/* End offer */
+
+/* Begin card */
+main .resources .card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 5px #ebf0f4;
+}
+
+main .resources .card img {
+  display: block;
+}
+
+main .resources .card h3 {
+  font-size: 28px;
+}
+
+main .resources .card .feature h4 {
+  font-size: 22px;
+  display: inline-block;
+}
+
+/* begin card top */
+main .resources .card .top {
+  padding: 40px 100px;
+}
+
+main .resources .card .top .column-left {
+  width: 20%;
+  margin-right: 5%;
+}
+
+main .resources .card .top .column-left a {
+  margin-top: 20px;
+}
+
+main .resources .card .top .column-right {
+  width: 75%;
+}
+
+main .resources .card .top .feature hr {
+  width: 60%;
+  border-top: 2px solid #777;
+  margin: 15px 0 15px 50px;
+}
+
+main .resources .card .top .feature p i {
+  color: #fe775a;
+  margin: 0 10px 0 15px;
+}
+
+main .resources .card .top .feature p i:first-child {
+
+  margin-left: 0px;
+}
+/* End card top */
+
+
+/* End resources */
+
+/* END MAIN */
