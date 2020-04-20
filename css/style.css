@@ -1,0 +1,28 @@
+/*  BEGIN RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END RESET*/
+
+/* BEGIN GENERAL RULES*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #33475b;
+}
+
+ul {
+  list-style: none;
+}
+
+.col {
+  float: left;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* END GENERAL RULES */
