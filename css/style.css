@@ -62,6 +62,13 @@ header .top-background {
 }
 
 /* begin settings-menu */
+header a {
+  display: inline-block;
+  color: #33475b;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 header .settings-menu {
 padding: 25px 0;
 }
@@ -74,12 +81,6 @@ header .settings-menu .left {
   line-height: 50px
 }
 
-header .settings-menu .col a {
-  display: inline-block;
-  color: #33475b;
-  font-weight: 600;
-  text-transform: capitalize;
-}
 
 header .settings-menu .col span.divider {
   line-height: 20px;
@@ -103,9 +104,43 @@ header .settings-menu .col a.orange-btn {
   padding: 14px;
   border-radius: 7px;
 }
+/* End settings-menu */
 
+/* Begin navigation */
+nav {
+padding: 25px 0;
+}
 
+nav .col {
+  width: 50%;
+}
 
+nav .right {
+  line-height: 34px;
+}
 
+nav .col ul li {
+  display: inline-block;
+}
+
+nav .col ul li a {
+  padding: 0 15px;
+}
+
+nav .col ul li a:last-child {
+  padding-right: 0px;
+}
+
+nav .col ul li a i{
+  margin-left: 10px;
+}
+/* End navigation */
+
+/* Begin jumbotron-section */
+header .jumbotron-section {
+  height: 800px;
+  background-image: url(../img/jumbotron.png);
+}
+/* End jumbotron-section */
 
 /* END HEADER */
