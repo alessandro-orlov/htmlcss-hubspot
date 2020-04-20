@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-  padding: 0 12%;
+  padding: 0 15%;
 }
 
 .top-background {
@@ -55,6 +55,12 @@ a {
   color: #fff;
   padding: 14px;
   border-radius: 7px;
+  transition: all .2s ease;
+}
+
+.orange-btn:hover {
+  color: #fff;
+  background-color: #03a5be;
 }
 /* END GENERAL RULES */
 
@@ -69,6 +75,11 @@ header a {
   color: #33475b;
   font-weight: 600;
   text-transform: capitalize;
+  transition: all .2s ease;
+}
+
+header a:hover {
+  color: #fe775a;
 }
 
 header .settings-menu {
@@ -99,6 +110,12 @@ header .settings-menu .col a.login {
   padding: 14px;
   border: 1px solid #fe775a;
   border-radius: 7px;
+  transition: all .2s ease;
+}
+
+header .settings-menu .col a.login:hover {
+  color: #03a5be;
+  border: 1px solid #03a5be;
 }
 /* End settings-menu */
 
