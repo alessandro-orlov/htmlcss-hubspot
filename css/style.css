@@ -23,10 +23,10 @@ a {
 }
 
 p {
-line-height: 36px;
-font-size: 16px;
-font-weight: 600;
-margin: 30px 0;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 25px 0;
 }
 
 .col {
@@ -81,11 +81,11 @@ a.big {
 
 
 /* BEGIN HEADER */
-header .top-background {
+header .top-section {
   border-bottom: 1px solid #33475b;
 }
 
-/* begin settings-menu */
+/* Begin settings-menu */
 header a {
   display: inline-block;
   color: #33475b;
@@ -108,7 +108,6 @@ header .settings-menu .col {
 header .settings-menu .left {
   line-height: 50px
 }
-
 
 header .settings-menu .col span.divider {
   line-height: 20px;
@@ -198,7 +197,7 @@ header .jumbotron-section .decoration {
 
 /* BEGIN MAIN */
 
-/*Begin offer */
+/* Begin offer */
 main section.offer {
   padding: 30px 0;
   width: 75%;
@@ -217,7 +216,8 @@ main section.offer h2 {
 
 /* Begin card */
 main .resources .card {
-  padding: 20px;
+  padding: 35px;
+  margin-bottom: 50px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 5px #ebf0f4;
@@ -225,52 +225,75 @@ main .resources .card {
 
 main .resources .card img {
   display: block;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 main .resources .card h3 {
   font-size: 28px;
+  margin-bottom: 35px;
+}
+
+main .resources .card hr {
+  margin: 35px 0;
 }
 
 main .resources .card .feature h4 {
   font-size: 22px;
-  display: inline-block;
 }
 
-/* begin card top */
-main .resources .card .top {
-  padding: 40px 100px;
+main .resources .card .feature ul {
+  margin: 25px 0;
 }
 
-main .resources .card .top .column-left {
-  width: 20%;
-  margin-right: 5%;
+main .resources .card .feature ul li {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-main .resources .card .top .column-left a {
+main .resources .card .feature ul li i {
+  color: #fe775a;
+  margin-right: 10px
+}
+
+main .resources .card a {
   margin-top: 20px;
 }
 
+/* Begin card top */
+main .resources .card .top {
+  padding: 25px;
+}
+
+main .resources .card .top .column-left {
+  width: 30%;
+}
+
 main .resources .card .top .column-right {
-  width: 75%;
+  width: 70%;
 }
 
 main .resources .card .top .feature hr {
   width: 60%;
-  border-top: 2px solid #777;
   margin: 15px 0 15px 50px;
 }
 
-main .resources .card .top .feature p i {
-  color: #fe775a;
-  margin: 0 10px 0 15px;
-}
-
-main .resources .card .top .feature p i:first-child {
-
-  margin-left: 0px;
+main .resources .card .top .feature li {
+  display: inline-block;
 }
 /* End card top */
 
+/* Begin column card */
+main .resources .column .card {
+  width: 30%;
+}
+
+main .resources .column .card:nth-child(2) {
+  margin: 0 5%;
+}
+/* End column card */
 
 /* End resources */
 
