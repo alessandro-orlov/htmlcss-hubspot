@@ -170,14 +170,15 @@ nav .col ul li a i{
 /* Begin jumbotron-section */
 header .jumbotron-section {
   background-color: #fef6ef;
-  background-position: 100% -10%;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
   background-image: url(../img/jumbotron.png);
+  height: 610px;
 }
 
 header .jumbotron-section .teaser {
   width: 50%;
-  padding: 60px 0px 140px 0;
+  padding: 80px 0px
 }
 header .jumbotron-section .teaser h1{
   font-size: 50px;
@@ -189,7 +190,7 @@ header .jumbotron-section .teaser h6 {
   font-size: 13px;
 }
 
-header .jumbotron-section .decoration {
+header .decoration-line {
   height: 100px;
   background-color: #afebe4;
   border-top: 5px solid #33475b;
@@ -518,7 +519,5 @@ section.bottom-footer .right a {
   margin-left: 25px;
 }
 
-
 /* End bottom footer */
-
 /* END FOOTER*/
