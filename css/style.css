@@ -342,4 +342,50 @@ section.grid-area .squere-row .squere-entry h3 i {
 }
 /* End grid area */
 
+/* Begin partners area */
+section.partners {
+  background-color: #fff;
+}
+
+/* Begin customers area */
+section.partners .customers {
+  padding: 5%;
+}
+
+section.partners .customers .col:first-child {
+  width: 30%;
+  padding: 0;
+}
+
+section.partners .customers .col {
+  width: 70%;
+  padding: 0 10px;
+}
+
+section.partners .customers .col .custumers-info {
+  padding: 0 20%;
+}
+
+section.partners .customers .col .custumers-info h2 {
+  font-size: 42px;
+}
+
+section.partners .customers .col .partners-logo {
+  float: left;
+  padding: 25px;
+  width: 25%;
+  line-height: 40px;
+  box-sizing: border-box;
+}
+
+section.partners .customers .col .partners-logo img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* End customers area */
+
+/* End partners area */
+
 /* END MAIN */
