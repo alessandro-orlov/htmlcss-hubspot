@@ -223,7 +223,7 @@ main .resources .card {
   padding: 35px;
   margin-bottom: 50px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0px 0px 8px 5px #ebf0f4;
 }
 
@@ -424,3 +424,101 @@ section.call-to-action .content .bottom-teaser h6 {
 /* End Call to action Section */
 
 /* END MAIN */
+
+/* BEGIN FOOTER*/
+footer {
+  background-color: #33475b;
+  color: #cbd6e2;
+}
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #cbd6e2;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+footer a:hover {
+  color: #7fd1de;
+}
+
+footer h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #eef1f1;
+}
+
+/* Begin link list */
+footer .link-list {
+  padding-top: 50px;
+}
+
+footer .link-list .col {
+  width: 25%;
+}
+
+footer .link-list .col ul {
+  margin: 30px 0;
+}
+footer .link-list .col ul li {
+  padding: 10px 0;
+}
+
+footer .link-list .col ul li i {
+  font-size: 21px;
+  margin-right: 20px;
+}
+
+footer .link-list .col a.support {
+  display: inline-block;
+  padding: 10px;
+  background-color: #dadee0;
+  color: #32495b;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+
+footer .link-list .col a.support:hover {
+   background-color: #03a5be;
+ }
+
+/* End link list */
+
+/* Begin languege option */
+footer .lenguege {
+  padding: 30px 0;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+footer .lenguege .option {
+  display: inline-block;
+  padding: 10px;
+}
+/* End languege option */
+
+/* Begin bottom footer */
+section.bottom-footer {
+  padding: 50px 0;
+}
+
+section.bottom-footer .col {
+  width: 50%;
+}
+
+section.bottom-footer .f-logo h4 {
+  font-size: 17px;
+  padding: 5px 0;
+}
+
+section.bottom-footer .right a {
+  margin-left: 25px;
+}
+
+
+/* End bottom footer */
+
+/* END FOOTER*/
