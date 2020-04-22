@@ -517,5 +517,82 @@
       </div>
     </footer>
     <!-- End footer -->
+
+    <!-- Begin chatbot button-->
+    <div class="chatbot" onclick="on()">
+      <img class="chat" src="img/chatbox.svg" alt="chatbox">
+    </div>
+    <!-- End chatbot button -->
+
+    <!-- Begin chat-window -->
+    <div id="chat-window">
+
+      <!-- Begin chat head -->
+      <div class="chat-head">
+
+        <div class="chat-container clearfix">
+          <div class="col left">
+              <img src="img/bot-avatar.webp" class="robot" alt="bot-avatar">
+              <h5>HubBot</h5>
+          </div>
+          <div class="col right">
+              <img src="img/close-chat.svg" class="close" alt="close" onclick="off()">
+          </div>
+        </div>
+
+      </div>
+      <!-- End chat head -->
+
+      <!-- Begin chat main -->
+      <div class="chat-main">
+        <div class="chat-container">
+
+          <!-- Begin bot-chat -->
+          <div class="bot-chat clearfix">
+
+            <div class="col">
+              <img src="img/bot-avatar.webp" class="robot" alt="bot-avatar">
+            </div>
+
+            <div class="col">
+              <div class="bot-message">
+                <span class="text">
+                  beep beep...<br>
+                  How HubBot can help you today?
+                </span>
+              </div>
+            </div>
+
+          </div>
+          <!-- End bot-chat -->
+
+        </div>
+      </div>
+      <!-- End chat main -->
+
+      <!-- Begin User Request -->
+      <div class="chat-container">
+        <div class="user-request">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="user-request" placeholder="What do you need?">
+            <button type="button" name="button" class="send"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- End User Request -->
+
+    </div>
+
+    <!-- Begin Script -->
+    <script>
+      function on() {
+      document.getElementById("chat-window").style.display = "block";
+      }
+
+      function off() {
+      document.getElementById("chat-window").style.display = "none";
+      }
+    </script>
+    <!-- End Script -->
   </body>
 </html>

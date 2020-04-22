@@ -179,7 +179,7 @@ header .jumbotron-section {
 
 header .jumbotron-section .teaser {
   width: 50%;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 header .jumbotron-section .teaser h1{
   font-size: 50px;
@@ -227,11 +227,11 @@ main .resources .card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 16px 5px #ebf0f4;
-  transition: all .4s ease;
+  transition: all .3s ease;
 }
 
 main .resources .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0px 0px 20px 10px #e1e8ef;
 }
 
@@ -317,11 +317,6 @@ section.grid-area {
   padding: 50px 0;
 }
 
-/* WARNING:  */
-section.grid-area .container::nth-child(2) {
-  background-color: yellow;
-} /* QUESTA REGOLA NON FUNZIONA ...PERCHE ??? */
-
 section.grid-area .center + .squere-row {
   margin-top: 10px;
 } /* Questa regola funziona */
@@ -361,7 +356,6 @@ section.grid-area .squere-row .squere-entry h3 i {
 section.grid-area .squere-row .squere-entry p {
   margin: 15px 0;
 }
-
 /* End Grid Section */
 
 /* Begin Partners Section */
@@ -539,6 +533,160 @@ section.bottom-footer .f-logo h4 {
 section.bottom-footer .right a {
   margin-left: 25px;
 }
-
 /* End bottom footer */
 /* END FOOTER*/
+
+/* BEGIN CHATBOT */
+
+/* Begin chatbot button */
+.chatbot {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #506e8e;
+  cursor: pointer;
+  box-shadow: 0px 0px 12px #38404c8f;
+}
+
+.chatbot img {
+  vertical-align: middle;
+  height: 28px;
+}
+
+/* End chatbot button */
+
+/* Begin chatbot window */
+#chat-window {
+  display: none;
+  position: fixed;
+  bottom: 9%;
+  right: 2%;
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px #38404c8f;
+}
+
+#chat-window .chat-container {
+  padding: 0 20px;
+}
+
+#chat-window  img.robot {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+#chat-window p {
+  margin: 5px 0;
+  line-height: normal;
+}
+
+/* Chatbot HEAD */
+#chat-window .chat-head {
+  height: 14%;
+  background-color: #506e8e;
+  padding: 20px 0;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+
+}
+
+#chat-window .chat-head .col {
+  width: 50%;
+}
+
+#chat-window .chat-head .right {
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+#chat-window .chat-head .right img.close {
+  cursor: pointer;
+  height: 20px;
+  vertical-align: middle;
+}
+
+#chat-window .chat-head .left h5 {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+/* Chatbot MAIN */
+#chat-window .chat-main {
+  height: 72%;
+  border-bottom: 1px solid #eaf0f6;
+}
+
+#chat-window .chat-main .bot-chat {
+  padding: 20px 0;
+}
+
+#chat-window .chat-main .bot-chat .col:first-child {
+  width: 14%;
+}
+
+#chat-window .chat-main .bot-chat .col {
+  width:85%;
+}
+
+#chat-window .chat-main .bot-chat .bot-message {
+  width: 100%;
+  padding: 10px;
+  margin: 5% 1% 0 0;
+  background-color: #eaf0f6;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#chat-window .chat-main .bot-chat .bot-message span.text {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* Chatbot USER REQUEST */
+#chat-window .user-request {
+  padding: 20px 0;
+}
+
+#chat-window .user-request input[type="text"] {
+  padding: 10px 0 5px 0;
+  border: none;
+  border-bottom: 1px solid #d3e0ec;
+  outline: none;
+  margin: 0 5% 0 10%;
+  width: 70%;
+  font-size: 16px;
+  color:#506e8e;
+  transition: all .2s ease;
+}
+
+#chat-window .user-request input[type="text"]:focus {
+  border-bottom: 1px solid #506e8e;
+}
+
+#chat-window .user-request input::placeholder {
+  color: #d3e0ec;
+  font-size: 16px;
+}
+
+#chat-window .user-request button.send {
+  background-color: #fff;
+  border: none;
+  font-size: 22px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #506e8e;
+}
+/* End chatbot window */
+/* END CHATBOT */
