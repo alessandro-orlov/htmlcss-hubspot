@@ -80,7 +80,6 @@ a.orange-btn:hover {
 a.big { padding: 25px 40px; }
 /* END GENERAL RULES */
 
-
 /* BEGIN HEADER */
 header .top-section {
   border-bottom: 1px solid #33475b;
@@ -114,6 +113,7 @@ header .settings-menu .col span.divider {
   border-right: 2px solid #33475b;
   margin: 0 20px;
 }
+
 header .settings-menu .col a.search {
   color: #03a5be;
   transition: all .2s ease;
@@ -200,9 +200,7 @@ header .decoration-line {
 /* End jumbotron-section */
 /* END HEADER */
 
-
 /* BEGIN MAIN */
-
 /* Begin offer Section */
 main section.offer {
   padding: 30px 0;
@@ -319,10 +317,6 @@ section.grid-area {
 
 section.grid-area .center + .squere-row {
   margin-top: 10px;
-} /* Questa regola funziona */
-
-section.grid-area .squere-row:last-child .squere-entry {
-  border-bottom: none;
 }
 
 section.grid-area .squere-row .squere-entry {
@@ -332,6 +326,10 @@ section.grid-area .squere-row .squere-entry {
   padding: 25px;
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
+}
+
+section.grid-area .squere-row:last-child .squere-entry {
+  border-bottom: none;
 }
 
 section.grid-area .squere-row .squere-entry:last-child {
@@ -438,7 +436,6 @@ section.call-to-action .content .bottom-teaser h6 {
   font-size: 13px;
 }
 /* End Call to action Section */
-
 /* END MAIN */
 
 /* BEGIN FOOTER*/
@@ -446,6 +443,7 @@ footer {
   background-color: #33475b;
   color: #cbd6e2;
 }
+
 footer p {
   margin: 0;
 }
@@ -501,7 +499,6 @@ footer .link-list .col a.support {
 footer .link-list .col a.support:hover {
    background-color: #03a5be;
  }
-
 /* End link list */
 
 /* Begin languege option */
@@ -537,7 +534,6 @@ section.bottom-footer .right a {
 /* END FOOTER*/
 
 /* BEGIN CHATBOT */
-
 /* Begin chatbot button */
 .chatbot {
   position: fixed;
@@ -551,16 +547,20 @@ section.bottom-footer .right a {
   background-color: #506e8e;
   cursor: pointer;
   box-shadow: 0px 0px 12px #38404c8f;
+  transition: all .2s ease;
+}
+
+.chatbot:hover {
+  box-shadow: 0px 0px 16px 2px #38404c8f;
 }
 
 .chatbot img {
   vertical-align: middle;
   height: 28px;
 }
-
 /* End chatbot button */
 
-/* Begin chatbot window */
+/* Begin CHATBOT WINDOW */
 #chat-window {
   display: none;
   position: fixed;
@@ -588,7 +588,7 @@ section.bottom-footer .right a {
   line-height: normal;
 }
 
-/* Chatbot HEAD */
+/* Chatbot window HEAD */
 #chat-window .chat-head {
   height: 14%;
   background-color: #506e8e;
@@ -618,11 +618,9 @@ section.bottom-footer .right a {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  line-height: 40px;
-  vertical-align: middle;
 }
 
-/* Chatbot MAIN */
+/* Chatbot window MAIN */
 #chat-window .chat-main {
   height: 72%;
   border-bottom: 1px solid #eaf0f6;
